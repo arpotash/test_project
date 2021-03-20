@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Granta Лифтбек",
+    "price": "60000",
+    "quantity": "280",
+    "in_stock": "True",
+    "diller": "Lada"
+
+  },
+  {
+    "name": "Granta Седан",
+    "price": "40000",
+    "quantity": "80",
+    "in_stock": "True",
+    "diller": "Lada"
+  },
+  {
+    "name": "Granta Хэтчбек",
+    "price": "30000",
+    "quantity": "0",
+    "in_stock": "False",
+    "diller": "Lada"
+  },
+  {
+    "name": "Tesla Model X",
+    "price": "64000",
+    "quantity": "2",
+    "in_stock": "True",
+    "diller": "Tesla"
+  },
+  {
+    "name": "Tesla Model 3",
+    "price": "85000",
+    "quantity": "9",
+    "in_stock": "True",
+    "diller": "Tesla"
+  },
+  {
+    "name": "S-Класс седан",
+    "price": "100000",
+    "quantity": "30",
+    "in_stock": "True",
+    "diller": "Mercedes Benz"
+  },
+  {
+    "name": "E-Класс универсал",
+    "price": "80000",
+    "quantity": "50",
+    "in_stock": "True",
+    "diller": "Mercedes Benz"
+  },
+  {
+    "name": "C-Класс седан",
+    "price": "70000",
+    "quantity": "60",
+    "in_stock": "True",
+    "diller": "Mercedes Benz"
+  },
+  {
+    "name": "Tesla Model S",
+    "price": "110000",
+    "quantity": "30",
+    "in_stock": "True",
+    "diller": "Tesla"
+  }
+]
