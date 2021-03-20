@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'car',
+    'django_filters',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +123,43 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 5,
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'basic': {
+            'format': '\n%(asctime)s %(levelname)s %(module)s - %(message)s'
+        }
+    },
+    'handlers': {
+        'basic': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'logfile.log',
+            'formatter': 'basic'
+        },
+        'error': {
+            'level': 'ERROR',
+            'class': 'logging.StreamHandler',
+            'formatter': 'basic'
+        }
+    },
+    'loggers': {
+        'organization_log': {
+            'level': 'INFO',
+            'handlers': ['basic']
+        },
+        'car_log': {
+            'level': 'INFO',
+            'handlers': ['basic']
+        }
+    }
+}
+

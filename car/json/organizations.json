@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Mercedes Benz",
+    "country": "Germany",
+    "address": "pulkovskoe highway, 16"
+  },
+  {
+    "name": "Tesla",
+    "country": "USA",
+    "address": "680 highway"
+  },
+  {
+    "name": "Lada",
+    "country": "Russia",
+    "address": "Marshal Zakharova, 41"
+  }
+]
